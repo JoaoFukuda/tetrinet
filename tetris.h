@@ -44,13 +44,13 @@ extern int current_x, current_y;
 
 
 typedef struct {
-    int hot_x, hot_y;	/* Hotspot coordinates */
-    int top, left;	/* Top-left coordinates relative to hotspot */
-    int bottom, right;	/* Bottom-right coordinates relative to hotspot */
-    char shape[4][4];	/* Shape data for the piece */
+	int hot_x, hot_y;	/* Hotspot coordinates */
+	int top, left;	/* Top-left coordinates relative to hotspot */
+	int bottom, right;	/* Bottom-right coordinates relative to hotspot */
+	char shape[4][4];	/* Shape data for the piece */
 } PieceData;
 
-PieceData piecedata[7][4];
+static PieceData piecedata[7][4];
 
 extern int current_piece, current_rotation;
 
